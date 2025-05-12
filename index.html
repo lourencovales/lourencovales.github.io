@@ -140,8 +140,10 @@
 			justify-content: center;
         }
         
-        .about-text {
-            flex: 0 1 60%;
+		.about-text {
+          	text-align: justify;
+ 			text-justify: inter-word;
+			flex: 0 1 60%;
 			max-width: 60%;
         }
         
@@ -250,6 +252,16 @@
             transition: var(--transition);
         }
         
+        .social-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--white);
+            margin-bottom: 20px;
+            background-color: #ddd;
+        }
+
         .social-icon:hover {
             background-color: var(--primary-color);
             color: var(--white);
@@ -389,15 +401,18 @@
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="social-links">
-                <a href="https://github.com/lourencovales/" class="social-icon">
-                    <i>GH</i>
+                <a href="https://github.com/lourencovales/">
+                    <img src="/images/gh.jpg" class="social-img">
                 </a>
-                <a href="https://www.linkedin.com/in/lourenco-vales-443088256/" class="social-icon">
-                    <i>LI</i>
+                <a href="https://www.linkedin.com/in/lourenco-vales-443088256/">
+                    <img src="/images/linkedin.jpg" class="social-img">
                 </a>
-                <a href="https://mastodon.social/@lvales" class="social-icon">
-                    <i>TW</i>
+                <a href="https://mastodon.social/@lvales">
+					<img src="/images/masto.jpg" class="social-img">
                 </a>
+				<a href="mailto:lgavales@gmail.com">
+					<img src="/images/mail.jpg" class="social-img">
+				</a>
             </div>
         </div>
     </section>
